@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ville de Tours</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <style>
+    *{
+			margin: 0;
+			padding: 0;
+            font-family: Century Gothic;
+		}
+
+		.main{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/bgutama.jpg);
+			background-size: cover;
+      position: fixed;
+		}
+
+		nav{
+			width: 100%;
+			height: 50px;
+			line-height: 40px;
+			z-index: 999;
+		}
+
+		nav img{
+			margin-top: -15px;
+		}
+
+		nav ul{
+			float: right;
+			margin-right: 95px;
+			
+		}
+
+		nav ul li{
+			list-style-type: none;
+			display: inline-block;
+			transition: 0.5s all;
+		}
+
+		nav ul li:hover{
+			background-color: #000;	
+		}
+
+		nav ul li.active{
+			background-color: #000;
+	        color: #fff;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 30px;
+			font-weight: bold;
+		}
+
+		img{
+			margin-top: 13px;
+            padding-left: 40px;
+		}
+    .drop1 ul 
+{
+    position:absolute;
+    left:-9999px;
+    top:-9999px;
+    list-style-type:none;
+}
+.drop1 li:hover { position:relative; background:black; }
+.drop1 li:hover ul 
+{
+    left:0px;
+    top:38px;
+    background:black;
+    padding:0px;
+}
+
+.drop1 li:hover ul li a 
+{
+    padding:5px;
+    display:block;
+    width:200px;
+    text-indent:5px;
+    background-color:black;
+}
+.drop1 li:hover ul li a:hover { background:red; 
+}
+footer 
+{
+  position: fixed;
+  padding-top: 0x;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+article
+{
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%,-50%);
+  width: 55%;
+  height: 70%;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background: rgba(204, 204, 204, 0.849)  ;
+  border-radius: 25px;
+  z-index: -1;
+}
+aside
+{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%,-50%);
+  width: 20%;
+  height: 70%;
+  box-sizing: border-box;
+  background: rgba(204, 204, 204, 0.849)  ;
+  border-radius: 25px;
+  z-index: -1;
+}
+aside img{
+  width: 55%; 
+  height: 40%; 
+  margin: 10%;
+  padding-top: 10%;
+}
+.contact-form
+        {
+            position: absolute;
+            top: 60%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+            width: 900px;
+            height: 590px;
+            padding: 0px 0px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0);
+        }
+        .contact-form p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .contact-form input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="password"],
+        .contact-form input[type="date"],
+        .contact-form select,
+        .contact-form input[type="email"],
+        .contact-form input[type="phone"],
+        .contact-form input[type="number"],
+        .contact-form datalist,
+        .contact-form input[list="stat"]
+        {
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .contact-form textarea
+        {
+        	border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 130px;
+            width: 50px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .contact-form input[type="submit"] {
+            height: 40px;
+            width: 310px;
+            color: #000;
+            font-size: 20px;
+            background: #000, linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin-top: 0%;
+            font-weight: bold;
+            left: 50px;
+        }
+        .contact-form a
+        {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <header>
+      <nav>
+			  <a href="home.html"><img src="img/tours.png" width="150" height="110"></a>
+			  <ul class="drop1">
+			  	<li><a href="home.html">Home</a></li>
+				  <li><a>Destinations</a>
+					  <ul>
+					    <li><a href='west.html'>Western Indonesia</a></li><br>
+					    <li><a href='central.html'>Central Indonesia</a></li><br>
+					    <li><a href='east.html'>Eastern Indonesia</a></li><br>
+				    </ul> 
+				  </li>
+				  <li><a>Gallery</a>
+					  <ul>
+					    <li><a href='mountain.html'>Mountain</a></li><br>
+					    <li><a href='beach.html'>Beach</a></li><br>
+					    <li><a href='park.html'>Park</a></li><br>
+					    <li><a href='sea.html'>Sea</a></li><br>
+				    </ul>
+				  </li>
+			  	<li><a href="about.html">Reservation</a></li>
+				  <li class="active"><a href="kontak.html">Contact</a></li>
+				  <li><a href="#"><img src="img/000.png" width="15" height="15"></a>
+					  <ul>
+					    <li><a href='login.html'>Logout</a></li><br>
+				    </ul>
+				  </li>
+			  </ul>
+		  </nav>
+    </header>
+    <main>
+      <article>
+        <div class="contact-form">
+          <form>
+            <table class="table1">
+          <tfoot>
+            <tr>
+              <td colspan="7"> <input type="submit" name="" value="SUBMIT"></td>
+            </tr>
+          </tfoot>
+          <tr>
+            <td><p>Email*</p></td>
+            <td><p> : </p></td>
+            <td><br><input type="Email" name="" placeholder="Enter Your Email" required=""></br></br></td>
+          </tr>
+          <tr>
+            <td><p>First Name*</p></td>
+            <td><p> : </p></td>
+            <td><input type="text" name="" placeholder="First Name" required=""></td>
+             <td width="100"></td>
+           <tr>
+            <td><p>Last Name</p></td>
+            <td><p> : </p></td>
+            <td><input type="text" name="" placeholder="Last Name"></td>
+          </tr>
+        <tr>
+          <td><p>Feedback</p></td>
+            <td><p>:</p></td>
+            <td><textarea rows="5" cols="30"></textarea></td>
+          </tr>
+          </tr>
+            </table>
+          </form>
+      </article>
+      <aside style="background-color: #ffffff8a">
+        <img src="jas.jpeg">
+        <h3 style="margin-left: 12%;">Muhammad Rafif Suja' AR</h3>
+      </aside>
+    </main>
+  </div>
+  <footer>
+    <table>
+        <tr>
+            <td class="followus" >Follow Us :</td>
+            <td ><img src="img/ig.png" width="30" height="30"></td>
+            <td class="tulisan" >@VillaDeToure</td>
+            <td><img src="img/twitter.png" width="35" height="35"><td>
+            <td class="tulisan" >@VillaDeToure</td>
+            <td width="400"></td>
+            <td class="contactus" >Contact Us :</td>
+            <td class="tulisan" >villadetour@vdt.com</td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
